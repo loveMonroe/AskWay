@@ -29,7 +29,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - FBRetainCycleDetector (0.1.3)
+  - FBRetainCycleDetector (0.1.4)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/FTS (2.7.2):
@@ -44,6 +44,7 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MGSwipeTableCell (1.6.6)
   - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.1)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - NJKWebViewProgress (0.2.3):
@@ -74,6 +75,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MGSwipeTableCell
   - MJExtension
+  - MJRefresh
   - MLeaksFinder
   - NJKWebViewProgress
   - PINCache
@@ -86,7 +88,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
@@ -95,6 +97,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MGSwipeTableCell: c3bc6e261e7bc06c112909fe3fb8205de286082c
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
@@ -104,6 +107,6 @@ SPEC CHECKSUMS:
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 1d3c38866bcd59d5d112b2f689160696e145ab9a
+PODFILE CHECKSUM: 25544f7d63efbb90b996dfb0ab9e05fb569e8e3e
 
 COCOAPODS: 1.1.1
