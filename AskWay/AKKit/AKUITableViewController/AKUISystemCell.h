@@ -12,7 +12,7 @@
 
 @class AKUISystemCell;
 
-@protocol LPUISystemCellDelegate <LPUITableViewCellDelegate>
+@protocol AKUISystemCellDelegate <AKUITableViewCellDelegate>
 
 @optional
 

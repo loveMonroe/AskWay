@@ -8,7 +8,7 @@
 
 #import "AKTabBarController.h"
 
-
+#import "AKNavigationController.h"
 
 #define TAB_ITEM_COUNT 4    //tab个数
 #define TAB_BTN_TAG 1000    //btn tag值 起点
@@ -40,6 +40,20 @@
 
 - (void)_addChildViewControllers {
     
+    NSArray *vcNames =@[@"AKSettingController",@"AKSettingController",@"AKSettingController"];
+    NSMutableArray *nvs = @[].mutableCopy;
+    for (NSString *vcName in vcNames) {
+        
+        UIViewController *vc = [[NSClassFromString(vcName) alloc] init];
+        AKNavigationController *nv = [[AKNavigationController alloc] initWithRootViewController:vc];
+        NSInteger index = [vcNames indexOfObject:vcName];
+        nv.tabBarItem.title = [NSString stringWithFormat:@"设置%ld", index];
+        nv.tabBarItem.imageInsets = UIEdgeInsetsMake(6.5, 0, -6.5, 0);
+        [nvs addObject:nv];
+    }
+    self.tabBar.tintColor = [UIColor redColor];
+    self.viewControllers = [NSArray arrayWithArray:nvs];
+    self.selectedIndex = 0;
 }
 
 - (void)_addBadgeLabels {

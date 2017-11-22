@@ -22,6 +22,9 @@
 		4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7721FC5265000295588 /* AKUISystemCellData.m */; };
 		4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7781FC52BE400295588 /* AKToolCreateUI.m */; };
 		4603B77D1FC52D8700295588 /* UIView+GESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B77C1FC52D8700295588 /* UIView+GESAdditions.m */; };
+		4603B7821FC5496500295588 /* AKSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7811FC5496500295588 /* AKSettingController.m */; };
+		4603B7851FC549F600295588 /* AKSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7841FC549F600295588 /* AKSettingViewModel.m */; };
+		4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7871FC55B1600295588 /* UITableView+AKHeightCache.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -130,6 +133,12 @@
 		4603B77B1FC52D8700295588 /* UIView+GESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GESAdditions.h"; sourceTree = "<group>"; };
 		4603B77C1FC52D8700295588 /* UIView+GESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GESAdditions.m"; sourceTree = "<group>"; };
 		4603B77E1FC52DDB00295588 /* AKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKExtension.h; path = Extension/AKExtension.h; sourceTree = "<group>"; };
+		4603B7801FC5496500295588 /* AKSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKSettingController.h; path = "Scene/AKMineController/设置/AKSettingController.h"; sourceTree = "<group>"; };
+		4603B7811FC5496500295588 /* AKSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKSettingController.m; path = "Scene/AKMineController/设置/AKSettingController.m"; sourceTree = "<group>"; };
+		4603B7831FC549F600295588 /* AKSettingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKSettingViewModel.h; path = "Scene/AKMineController/设置/AKSettingViewModel.h"; sourceTree = "<group>"; };
+		4603B7841FC549F600295588 /* AKSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKSettingViewModel.m; path = "Scene/AKMineController/设置/AKSettingViewModel.m"; sourceTree = "<group>"; };
+		4603B7861FC55B1600295588 /* UITableView+AKHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+AKHeightCache.h"; path = "AKKit/AKCategory/UITableView+AKHeightCache.h"; sourceTree = "<group>"; };
+		4603B7871FC55B1600295588 /* UITableView+AKHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+AKHeightCache.m"; path = "AKKit/AKCategory/UITableView+AKHeightCache.m"; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -332,8 +341,21 @@
 				4603B7531FC513B800295588 /* NSArray+AKSectionData.m */,
 				4603B7551FC513FC00295588 /* UITableView+EmptyData.h */,
 				4603B7561FC513FC00295588 /* UITableView+EmptyData.m */,
+				4603B7861FC55B1600295588 /* UITableView+AKHeightCache.h */,
+				4603B7871FC55B1600295588 /* UITableView+AKHeightCache.m */,
 			);
 			name = AKCategory;
+			sourceTree = "<group>";
+		};
+		4603B77F1FC5490400295588 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				4603B7801FC5496500295588 /* AKSettingController.h */,
+				4603B7811FC5496500295588 /* AKSettingController.m */,
+				4603B7831FC549F600295588 /* AKSettingViewModel.h */,
+				4603B7841FC549F600295588 /* AKSettingViewModel.m */,
+			);
+			name = "设置";
 			sourceTree = "<group>";
 		};
 		4695EFAD1FC26780000129A3 = {
@@ -559,6 +581,7 @@
 			children = (
 				4695F0731FC2A9C4000129A3 /* AKMineController.h */,
 				4695F0741FC2A9C4000129A3 /* AKMineController.m */,
+				4603B77F1FC5490400295588 /* 设置 */,
 			);
 			name = Mine;
 			sourceTree = "<group>";
@@ -566,6 +589,7 @@
 		4695F0761FC2AA6E000129A3 /* AKKit */ = {
 			isa = PBXGroup;
 			children = (
+				4603B76D1FC5226700295588 /* AKKit.h */,
 				4603B7511FC5139B00295588 /* AKCategory */,
 				4603B7471FC5114000295588 /* AKUITableViewController */,
 				4695F0811FC2B461000129A3 /* AKView */,
@@ -575,7 +599,6 @@
 				4695F07B1FC2AAF1000129A3 /* AKViewModel.m */,
 				4695F07E1FC2B2D5000129A3 /* AKRefreshViewController.h */,
 				4695F07F1FC2B2D5000129A3 /* AKRefreshViewController.m */,
-				4603B76D1FC5226700295588 /* AKKit.h */,
 			);
 			name = AKKit;
 			sourceTree = "<group>";
@@ -793,11 +816,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4695F07C1FC2AAF1000129A3 /* AKViewModel.m in Sources */,
+				4603B7851FC549F600295588 /* AKSettingViewModel.m in Sources */,
 				4695F06A1FC2A93B000129A3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				4603B7541FC513B800295588 /* NSArray+AKSectionData.m in Sources */,
 				4695F00D1FC281B2000129A3 /* AppDelegate+Root.m in Sources */,
 				4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */,
 				4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */,
+				4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */,
 				4603B7601FC51CCF00295588 /* AKUITableViewController.m in Sources */,
 				4695F06D1FC2A93B000129A3 /* UIViewController+NavigationItem.m in Sources */,
 				4603B7661FC51E4D00295588 /* AKUITableViewCellData.m in Sources */,
@@ -819,6 +844,7 @@
 				4695EFF91FC275D7000129A3 /* main.m in Sources */,
 				4603B7691FC51ECF00295588 /* AKUITableViewCell.m in Sources */,
 				4695F06B1FC2A93B000129A3 /* UIViewController+CustomBar.m in Sources */,
+				4603B7821FC5496500295588 /* AKSettingController.m in Sources */,
 				4603B75A1FC51A4700295588 /* AKRefreshHeader.m in Sources */,
 				4695F0691FC2A93B000129A3 /* LPKeyBoardObject.m in Sources */,
 				4695F0721FC2A9A8000129A3 /* AKMentorController.m in Sources */,

@@ -11,6 +11,7 @@
 
 #import "NSArray+AKSectionData.h"
 #import "UITableView+EmptyData.h"
+#import "UITableView+AKHeightCache.h"
 
 
 #endif /* AKKit_h */

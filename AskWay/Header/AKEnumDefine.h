@@ -9,7 +9,7 @@
 #ifndef AKEnumDefine_h
 #define AKEnumDefine_h
 
-// 数据请求方式
+// 本地数据请求方式
 typedef NS_ENUM(NSUInteger, AKDataLoadType) {
     AKDataLoadFirst,    // 首次加载
     AKDataLoadPullDown, // 下拉刷新
@@ -24,6 +24,14 @@ typedef NS_ENUM(NSInteger, TabBarIndex) {
 
 typedef NS_ENUM(NSInteger, AKLoadNoDataType) {
     AKLoadNoDataNone = 0,
+};
+
+// 网络请求类型
+typedef NS_ENUM(NSInteger , AKRequestType) {
+    //加载更多
+    AKRequestLoadMore = 0,
+    //重新加载
+    AKRequestRefresh = 1,
 };
 
 

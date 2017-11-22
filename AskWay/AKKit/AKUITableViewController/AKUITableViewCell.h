@@ -10,7 +10,7 @@
 
 @class AKUITableViewCellData;
 
-@protocol LPUITableViewCellDelegate <NSObject>
+@protocol AKUITableViewCellDelegate <NSObject>
 
 @end
 
