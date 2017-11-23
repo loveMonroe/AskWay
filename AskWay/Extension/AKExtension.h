@@ -10,6 +10,7 @@
 #define AKExtension_h
 
 #import "UIView+GESAdditions.h"
+#import "UIViewController+NavigationItem.h"
 
 
 #endif /* AKExtension_h */

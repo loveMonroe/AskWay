@@ -29,7 +29,7 @@
     }
     
     //默认背景色
-    self.view.backgroundColor = LPColorBackground;
+//    self.view.backgroundColor = LPColorBackground;
     [self initView];
     [self fetchViewData:AKDataLoadFirst];
 }

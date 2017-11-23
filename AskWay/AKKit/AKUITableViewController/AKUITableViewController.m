@@ -63,7 +63,7 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:[self prefersTableViewStyle]];
         _tableView.delegate = self;
         _tableView.dataSource = self.viewModel;
-        _tableView.backgroundColor = LPColorBackground;
+//        _tableView.backgroundColor = LPColorBackground;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }

@@ -8,6 +8,8 @@
 
 #import "AKSettingViewModel.h"
 
+#import "AKCustomInfoCellData.h"
+
 @implementation AKSettingViewModel
 
 - (void)createDataSource {
@@ -34,7 +36,13 @@
     NSArray *sectionData2 = @[cellData3];
     sectionData2.headerHeight = 20.0;
     
-    self.mDataArray = @[sectionData1, sectionData2].mutableCopy;
+    AKCustomInfoCellData *cellData4 = [[AKCustomInfoCellData alloc] init];
+    cellData4.titleString = @"adfadf";
+    cellData4.descString = @"lalodowe";
+    
+    NSArray *sectionData3 = @[cellData4];
+    
+    self.mDataArray = @[sectionData1, sectionData2, sectionData3].mutableCopy;
 }
 
 @end

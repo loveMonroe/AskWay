@@ -25,6 +25,10 @@
 		4603B7821FC5496500295588 /* AKSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7811FC5496500295588 /* AKSettingController.m */; };
 		4603B7851FC549F600295588 /* AKSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7841FC549F600295588 /* AKSettingViewModel.m */; };
 		4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7871FC55B1600295588 /* UITableView+AKHeightCache.m */; };
+		4603B78E1FC6763200295588 /* AKCustomInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B78D1FC6763200295588 /* AKCustomInfoCell.m */; };
+		4603B7921FC6767600295588 /* AKCustomInfoCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7911FC6767600295588 /* AKCustomInfoCellData.m */; };
+		4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7941FC69BEE00295588 /* AKMineViewController.m */; };
+		4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7971FC69C7300295588 /* AKMineViewModel.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -74,7 +78,6 @@
 		4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0661FC2A93B000129A3 /* UIViewController+KeyBoard.m */; };
 		4695F06D1FC2A93B000129A3 /* UIViewController+NavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0681FC2A93B000129A3 /* UIViewController+NavigationItem.m */; };
 		4695F0721FC2A9A8000129A3 /* AKMentorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0711FC2A9A8000129A3 /* AKMentorController.m */; };
-		4695F0751FC2A9C4000129A3 /* AKMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0741FC2A9C4000129A3 /* AKMineController.m */; };
 		4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0781FC2AA8B000129A3 /* AKBaseViewController.m */; };
 		4695F07C1FC2AAF1000129A3 /* AKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F07B1FC2AAF1000129A3 /* AKViewModel.m */; };
 		4695F0801FC2B2D5000129A3 /* AKRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F07F1FC2B2D5000129A3 /* AKRefreshViewController.m */; };
@@ -139,6 +142,14 @@
 		4603B7841FC549F600295588 /* AKSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKSettingViewModel.m; path = "Scene/AKMineController/设置/AKSettingViewModel.m"; sourceTree = "<group>"; };
 		4603B7861FC55B1600295588 /* UITableView+AKHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+AKHeightCache.h"; path = "AKKit/AKCategory/UITableView+AKHeightCache.h"; sourceTree = "<group>"; };
 		4603B7871FC55B1600295588 /* UITableView+AKHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+AKHeightCache.m"; path = "AKKit/AKCategory/UITableView+AKHeightCache.m"; sourceTree = "<group>"; };
+		4603B78C1FC6763200295588 /* AKCustomInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKCustomInfoCell.h; path = "View/普通信息Cell/AKCustomInfoCell.h"; sourceTree = "<group>"; };
+		4603B78D1FC6763200295588 /* AKCustomInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKCustomInfoCell.m; path = "View/普通信息Cell/AKCustomInfoCell.m"; sourceTree = "<group>"; };
+		4603B7901FC6767600295588 /* AKCustomInfoCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKCustomInfoCellData.h; path = "View/普通信息Cell/AKCustomInfoCellData.h"; sourceTree = "<group>"; };
+		4603B7911FC6767600295588 /* AKCustomInfoCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKCustomInfoCellData.m; path = "View/普通信息Cell/AKCustomInfoCellData.m"; sourceTree = "<group>"; };
+		4603B7931FC69BEE00295588 /* AKMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMineViewController.h; path = Scene/AKMineController/AKMineViewController.h; sourceTree = "<group>"; };
+		4603B7941FC69BEE00295588 /* AKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineViewController.m; path = Scene/AKMineController/AKMineViewController.m; sourceTree = "<group>"; };
+		4603B7961FC69C7300295588 /* AKMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMineViewModel.h; path = Scene/AKMineController/AKMineViewModel.h; sourceTree = "<group>"; };
+		4603B7971FC69C7300295588 /* AKMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineViewModel.m; path = Scene/AKMineController/AKMineViewModel.m; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,8 +219,6 @@
 		4695F0681FC2A93B000129A3 /* UIViewController+NavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NavigationItem.m"; path = "Extension/UIViewController+NavigationItem.m"; sourceTree = "<group>"; };
 		4695F0701FC2A9A8000129A3 /* AKMentorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMentorController.h; path = Scene/AKMentorController/AKMentorController.h; sourceTree = "<group>"; };
 		4695F0711FC2A9A8000129A3 /* AKMentorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMentorController.m; path = Scene/AKMentorController/AKMentorController.m; sourceTree = "<group>"; };
-		4695F0731FC2A9C4000129A3 /* AKMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMineController.h; path = Scene/AKMineController/AKMineController.h; sourceTree = "<group>"; };
-		4695F0741FC2A9C4000129A3 /* AKMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineController.m; path = Scene/AKMineController/AKMineController.m; sourceTree = "<group>"; };
 		4695F0771FC2AA8B000129A3 /* AKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKBaseViewController.h; path = AKKit/AKBaseViewController.h; sourceTree = "<group>"; };
 		4695F0781FC2AA8B000129A3 /* AKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKBaseViewController.m; path = AKKit/AKBaseViewController.m; sourceTree = "<group>"; };
 		4695F07A1FC2AAF1000129A3 /* AKViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKViewModel.h; path = AKKit/AKViewModel.h; sourceTree = "<group>"; };
@@ -358,6 +367,17 @@
 			name = "设置";
 			sourceTree = "<group>";
 		};
+		4603B78F1FC6763B00295588 /* 普通信息Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4603B78C1FC6763200295588 /* AKCustomInfoCell.h */,
+				4603B78D1FC6763200295588 /* AKCustomInfoCell.m */,
+				4603B7901FC6767600295588 /* AKCustomInfoCellData.h */,
+				4603B7911FC6767600295588 /* AKCustomInfoCellData.m */,
+			);
+			name = "普通信息Cell";
+			sourceTree = "<group>";
+		};
 		4695EFAD1FC26780000129A3 = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +461,7 @@
 		4695EFEE1FC274E1000129A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4603B78F1FC6763B00295588 /* 普通信息Cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -579,8 +600,10 @@
 		4695F06F1FC2A970000129A3 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				4695F0731FC2A9C4000129A3 /* AKMineController.h */,
-				4695F0741FC2A9C4000129A3 /* AKMineController.m */,
+				4603B7961FC69C7300295588 /* AKMineViewModel.h */,
+				4603B7971FC69C7300295588 /* AKMineViewModel.m */,
+				4603B7931FC69BEE00295588 /* AKMineViewController.h */,
+				4603B7941FC69BEE00295588 /* AKMineViewController.m */,
 				4603B77F1FC5490400295588 /* 设置 */,
 			);
 			name = Mine;
@@ -817,6 +840,7 @@
 			files = (
 				4695F07C1FC2AAF1000129A3 /* AKViewModel.m in Sources */,
 				4603B7851FC549F600295588 /* AKSettingViewModel.m in Sources */,
+				4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */,
 				4695F06A1FC2A93B000129A3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				4603B7541FC513B800295588 /* NSArray+AKSectionData.m in Sources */,
 				4695F00D1FC281B2000129A3 /* AppDelegate+Root.m in Sources */,
@@ -826,7 +850,6 @@
 				4603B7601FC51CCF00295588 /* AKUITableViewController.m in Sources */,
 				4695F06D1FC2A93B000129A3 /* UIViewController+NavigationItem.m in Sources */,
 				4603B7661FC51E4D00295588 /* AKUITableViewCellData.m in Sources */,
-				4695F0751FC2A9C4000129A3 /* AKMineController.m in Sources */,
 				4695F0021FC27B0D000129A3 /* AKTabBarController.m in Sources */,
 				4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */,
 				4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */,
@@ -834,6 +857,7 @@
 				4603B75D1FC51B9E00295588 /* AKRefreshFooter.m in Sources */,
 				4695F05E1FC2A910000129A3 /* AKHomePageController.m in Sources */,
 				4695F0801FC2B2D5000129A3 /* AKRefreshViewController.m in Sources */,
+				4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */,
 				4603B74C1FC5116500295588 /* AKLoadingView.m in Sources */,
 				4603B77D1FC52D8700295588 /* UIView+GESAdditions.m in Sources */,
 				4603B74D1FC5116500295588 /* AKLoadNoDataView.m in Sources */,
@@ -846,8 +870,10 @@
 				4695F06B1FC2A93B000129A3 /* UIViewController+CustomBar.m in Sources */,
 				4603B7821FC5496500295588 /* AKSettingController.m in Sources */,
 				4603B75A1FC51A4700295588 /* AKRefreshHeader.m in Sources */,
+				4603B7921FC6767600295588 /* AKCustomInfoCellData.m in Sources */,
 				4695F0691FC2A93B000129A3 /* LPKeyBoardObject.m in Sources */,
 				4695F0721FC2A9A8000129A3 /* AKMentorController.m in Sources */,
+				4603B78E1FC6763200295588 /* AKCustomInfoCell.m in Sources */,
 				4603B7571FC513FC00295588 /* UITableView+EmptyData.m in Sources */,
 				4603B7631FC51D0C00295588 /* AKUITableViewModel.m in Sources */,
 			);

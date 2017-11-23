@@ -40,7 +40,7 @@
 
 - (void)_addChildViewControllers {
     
-    NSArray *vcNames =@[@"AKSettingController",@"AKSettingController",@"AKSettingController"];
+    NSArray *vcNames =@[@"AKSettingController",@"AKSettingController",@"AKMineViewController"];
     NSMutableArray *nvs = @[].mutableCopy;
     for (NSString *vcName in vcNames) {
         

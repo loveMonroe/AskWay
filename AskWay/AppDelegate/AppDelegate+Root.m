@@ -16,17 +16,18 @@
     AKTabBarController *tabVC = [[AKTabBarController alloc] init];
     self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
+    
+    [self _configBasicNavigationBar];
 }
 
 - (void)_configBasicNavigationBar {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     
-    UIImage *backgroundImage = [UIImage imageNamed:@"icon_nav_bg"];
+    UIImage *backgroundImage = [UIImage imageWithColor:LPColorWhite];
     NSDictionary *textAttributes = @{
                                      NSFontAttributeName: [UIFont systemFontOfSize:18],
                                      NSForegroundColorAttributeName: LPColorTitle,
                                      };
-    
     [navigationBarAppearance setBackgroundImage:backgroundImage
                                   forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setShadowImage:[UIImage new]];

@@ -11,6 +11,7 @@
 
 
 #define S_font(n) [UIFont systemFontOfSize:n]
+#define SB_font(n) [UIFont boldSystemFontOfSize:n]
 
 
 #endif /* AKUIDefine_h */
