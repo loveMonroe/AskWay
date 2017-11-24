@@ -29,6 +29,7 @@
 		4603B7921FC6767600295588 /* AKCustomInfoCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7911FC6767600295588 /* AKCustomInfoCellData.m */; };
 		4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7941FC69BEE00295588 /* AKMineViewController.m */; };
 		4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7971FC69C7300295588 /* AKMineViewModel.m */; };
+		4603B79C1FC7B32400295588 /* AKIAMMentorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B79B1FC7B32400295588 /* AKIAMMentorController.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -150,6 +151,8 @@
 		4603B7941FC69BEE00295588 /* AKMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineViewController.m; path = Scene/AKMineController/AKMineViewController.m; sourceTree = "<group>"; };
 		4603B7961FC69C7300295588 /* AKMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMineViewModel.h; path = Scene/AKMineController/AKMineViewModel.h; sourceTree = "<group>"; };
 		4603B7971FC69C7300295588 /* AKMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineViewModel.m; path = Scene/AKMineController/AKMineViewModel.m; sourceTree = "<group>"; };
+		4603B79A1FC7B32400295588 /* AKIAMMentorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKIAMMentorController.h; path = "Scene/AKMineController/我是导师/AKIAMMentorController.h"; sourceTree = "<group>"; };
+		4603B79B1FC7B32400295588 /* AKIAMMentorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKIAMMentorController.m; path = "Scene/AKMineController/我是导师/AKIAMMentorController.m"; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -378,6 +381,15 @@
 			name = "普通信息Cell";
 			sourceTree = "<group>";
 		};
+		4603B7991FC7B2DE00295588 /* 我是导师 */ = {
+			isa = PBXGroup;
+			children = (
+				4603B79A1FC7B32400295588 /* AKIAMMentorController.h */,
+				4603B79B1FC7B32400295588 /* AKIAMMentorController.m */,
+			);
+			name = "我是导师";
+			sourceTree = "<group>";
+		};
 		4695EFAD1FC26780000129A3 = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +616,7 @@
 				4603B7971FC69C7300295588 /* AKMineViewModel.m */,
 				4603B7931FC69BEE00295588 /* AKMineViewController.h */,
 				4603B7941FC69BEE00295588 /* AKMineViewController.m */,
+				4603B7991FC7B2DE00295588 /* 我是导师 */,
 				4603B77F1FC5490400295588 /* 设置 */,
 			);
 			name = Mine;
@@ -844,6 +857,7 @@
 				4695F06A1FC2A93B000129A3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				4603B7541FC513B800295588 /* NSArray+AKSectionData.m in Sources */,
 				4695F00D1FC281B2000129A3 /* AppDelegate+Root.m in Sources */,
+				4603B79C1FC7B32400295588 /* AKIAMMentorController.m in Sources */,
 				4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */,
 				4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */,
 				4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "AKMineViewController.h"
 
+#import "AKIAMMentorController.h"
+
 @interface AKMineViewController ()
 
 @end
@@ -35,6 +37,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 0 && indexPath.row == 2) {
+        AKIAMMentorController *vc = [[AKIAMMentorController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - 重写父类方法
