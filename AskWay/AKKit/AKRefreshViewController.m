@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    self.view.backgroundColor = LPColorBackground;
+    self.view.backgroundColor = LPColorWhite;
 }
 
 #pragma mark - 加载

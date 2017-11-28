@@ -40,14 +40,19 @@
 
 - (void)_addChildViewControllers {
     
-    NSArray *vcNames =@[@"AKSettingController",@"AKSettingController",@"AKMineViewController"];
+    NSArray *vcNames =@[@"AKSettingController", @"AKSettingController", @"AKMineViewController"];
+    NSArray *vcTitle = @[@"首页", @"导师", @"我"];
+    
     NSMutableArray *nvs = @[].mutableCopy;
-    for (NSString *vcName in vcNames) {
+    for (int i = 0; i < vcNames.count; i++) {
+        
+        NSString *vcName = [vcNames objectAtIndex:i];
         
         UIViewController *vc = [[NSClassFromString(vcName) alloc] init];
         AKNavigationController *nv = [[AKNavigationController alloc] initWithRootViewController:vc];
-        NSInteger index = [vcNames indexOfObject:vcName];
-        nv.tabBarItem.title = [NSString stringWithFormat:@"设置%ld", index];
+        
+        nv.tabBarItem.title = [vcTitle objectAtIndex:i];
+        
         nv.tabBarItem.imageInsets = UIEdgeInsetsMake(6.5, 0, -6.5, 0);
         [nvs addObject:nv];
     }

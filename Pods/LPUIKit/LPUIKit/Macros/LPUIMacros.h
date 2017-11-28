@@ -66,7 +66,7 @@
 #define LPColorTitle        HEXCOLOR(0x333333)   // 重要标题/文本框已填写内容/正文文字颜色
 #define LPColorSubTitle     HEXCOLOR(0x666666)   // 次要级信息文字颜色
 #define LPColorIgnoreTitle  HEXCOLOR(0x999999)   // 不重要信息/占位提示文字颜色--
-#define LPColorLine         HEXCOLOR(0xEAEAEA)   // 分割线颜色
+#define LPColorLine         HEXCOLOR(0xDFDFDF)   // 分割线颜色
 #define LPColorBackground   HEXCOLOR(0xF3F3F3)   // 页面背景色
 
 #define LPColorGoldenButton         HEXCOLOR(0xC4A475)          //按钮颜色（金色）
@@ -100,7 +100,7 @@
 /*
  间距
  */
-#define LPSpaceHorizontalEdge               12.0    // 水平方向，与屏幕的间距
+#define LPSpaceHorizontalEdge               16.0    // 水平方向，与屏幕的间距
 #define LPSpaceCellControlsVerticalEdge     10.0    // 垂直方向，cell上控件的间距
 #define LPSpaceCellHeadImageRightEdge        8.0    // 水平方向，cell上与头像右边的间距
 #define LPSpaceCellIconImageRightEdge       12.0    // 水平方向，cell上与icon图片右边的间距

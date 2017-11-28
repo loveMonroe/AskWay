@@ -21,7 +21,8 @@
  常用颜色
  */
 #define AKColor_Title       HEXCOLOR(0x333333)    // 重要标题/文本框已填写内容/正文文字颜色
-#define AKColor_IgnoreTitle HEXCOLOR(0x999999)    // 不重要信息/占位提示文字颜色--
+#define AKColor_IgnoreTitle HEXCOLOR(0x999999)    // 不重要信息/占位提示文字颜色--浅灰色
+#define AKColor_Yellow      HEXCOLOR(0xFFAA01)    // 标题之后的提示信息--黄色
 #define AKColor_Blue        HEXCOLOR(0x4CA7FF)    // 按钮/分割线 蓝色
 #define AKColor_Gray        HEXCOLOR(0xCCCCCC)    // 分割线 灰色
 

@@ -1,56 +1,59 @@
 //
-//  AKMineViewController.m
+//  AKPersonDataViewController.m
 //  AskWay
 //
-//  Created by damion on 2017/11/23.
+//  Created by damion on 2017/11/28.
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import "AKMineViewController.h"
-
 #import "AKPersonDataViewController.h"
-#import "AKIAMMentorController.h"
 
-@interface AKMineViewController ()
+#import "AKNicknameController.h"
+
+@interface AKPersonDataViewController ()
 
 @end
 
-@implementation AKMineViewController
+@implementation AKPersonDataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self lp_setupNavRightItemWithTitle:@"设置" action:@selector(_gotoSettingPage:)];
+    self.navigationItem.title = @"个人资料";
     
     [self.viewModel createDataSource];
     [self.tableView reloadData];
 }
 
-#pragma mark - UI and Action
-
-- (void)_gotoSettingPage:(id)sender {
-    
-}
-
-#pragma mark - UITableViewDelegate
+#pragma mark - UITableViewDelegate UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.section == 0 && indexPath.row == 0) {
-        AKPersonDataViewController *vc = [[AKPersonDataViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.section == 0 && indexPath.row == 2) {
-        AKIAMMentorController *vc = [[AKIAMMentorController alloc] init];
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        AKNicknameController *vc = [[AKNicknameController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 24) backgroundColor:LPColorClear superView:nil];
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(LPSpaceHorizontalEdge, 24- 1/screenScale, screenWidth - LPSpaceHorizontalEdge*2, 1/screenScale)];
+        label.backgroundColor = LPColorLine;
+        [backView addSubview:label];
+        
+        return backView;
+    }
+    return nil;
 }
 
 #pragma mark - 重写父类方法
 - (Class)viewModelClass {
     
-    return [AKMineViewModel class];
+    return [AKPersonDataViewModel class];
 }
 
 - (void)didReceiveMemoryWarning {

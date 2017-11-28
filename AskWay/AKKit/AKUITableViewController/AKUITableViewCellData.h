@@ -36,7 +36,7 @@
 @property (nonatomic, assign) UITableViewCellSeparatorStyle separatorStyle;
 
 /**
- 设置分割线的长度，default left is 12.0，right is 0
+ 设置分割线的长度，default left is 16.0，right is 16.0
  */
 @property (nonatomic, assign) UIEdgeInsets separatorInset;
 

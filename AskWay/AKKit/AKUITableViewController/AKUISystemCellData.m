@@ -18,7 +18,7 @@
         self.cellIdentfier = NSStringFromClass(self.className);
         self.cellHeight = 44.0;
         self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        self.separatorInset = UIEdgeInsetsMake(0, LPSpaceHorizontalEdge, 0, 0);
+        self.separatorInset = UIEdgeInsetsMake(0, LPSpaceHorizontalEdge, 0, LPSpaceHorizontalEdge);
         self.horizontalEdge = 12;
         [self loadCellDefaultConfig];
     }

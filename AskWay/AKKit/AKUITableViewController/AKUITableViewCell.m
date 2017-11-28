@@ -99,7 +99,7 @@
 
 - (UIImageView *)arrowImageView {
     if (!_arrowImageView) {
-        _arrowImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AKUIKit.bundle/icon_system_list_arrow"]];
+        _arrowImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LPUIKit.bundle/icon_system_list_arrow"]];
     }
     return _arrowImageView;
 }
