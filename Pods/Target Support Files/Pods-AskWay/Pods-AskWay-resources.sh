@@ -74,13 +74,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "LPUIKit/LPUIKit/Resources/LPUiKit.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "LPUIKit/LPUIKit/Resources/LPUiKit.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"

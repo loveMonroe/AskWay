@@ -30,6 +30,7 @@
 		4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7941FC69BEE00295588 /* AKMineViewController.m */; };
 		4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B7971FC69C7300295588 /* AKMineViewModel.m */; };
 		4603B79C1FC7B32400295588 /* AKIAMMentorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B79B1FC7B32400295588 /* AKIAMMentorController.m */; };
+		4603B7A01FCCF87800295588 /* AKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4603B79F1FCCF87800295588 /* AKLoginController.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -153,6 +154,8 @@
 		4603B7971FC69C7300295588 /* AKMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMineViewModel.m; path = Scene/AKMineController/AKMineViewModel.m; sourceTree = "<group>"; };
 		4603B79A1FC7B32400295588 /* AKIAMMentorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKIAMMentorController.h; path = "Scene/AKMineController/我是导师/AKIAMMentorController.h"; sourceTree = "<group>"; };
 		4603B79B1FC7B32400295588 /* AKIAMMentorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKIAMMentorController.m; path = "Scene/AKMineController/我是导师/AKIAMMentorController.m"; sourceTree = "<group>"; };
+		4603B79E1FCCF87800295588 /* AKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKLoginController.h; path = Scene/AKLoginAndRegister/AKLoginController.h; sourceTree = "<group>"; };
+		4603B79F1FCCF87800295588 /* AKLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKLoginController.m; path = Scene/AKLoginAndRegister/AKLoginController.m; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -390,6 +393,15 @@
 			name = "我是导师";
 			sourceTree = "<group>";
 		};
+		4603B79D1FCCF81A00295588 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4603B79E1FCCF87800295588 /* AKLoginController.h */,
+				4603B79F1FCCF87800295588 /* AKLoginController.m */,
+			);
+			name = LoginAndRegister;
+			sourceTree = "<group>";
+		};
 		4695EFAD1FC26780000129A3 = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +467,7 @@
 		4695EFEC1FC274B7000129A3 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4603B79D1FCCF81A00295588 /* LoginAndRegister */,
 				4695F06F1FC2A970000129A3 /* Mine */,
 				4695F06E1FC2A960000129A3 /* Mentor */,
 				4695F05B1FC2A8DA000129A3 /* HomePage */,
@@ -866,6 +879,7 @@
 				4603B7661FC51E4D00295588 /* AKUITableViewCellData.m in Sources */,
 				4695F0021FC27B0D000129A3 /* AKTabBarController.m in Sources */,
 				4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */,
+				4603B7A01FCCF87800295588 /* AKLoginController.m in Sources */,
 				4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */,
 				4603B7701FC5255800295588 /* AKUISystemCell.m in Sources */,
 				4603B75D1FC51B9E00295588 /* AKRefreshFooter.m in Sources */,

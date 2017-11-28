@@ -9,12 +9,18 @@
 #import "AppDelegate+Root.h"
 
 #import "AKTabBarController.h"
+#import "AKNavigationController.h"
+#import "AKLoginController.h"
 
 @implementation AppDelegate (Root)
 
 - (void)configRootViewController {
     AKTabBarController *tabVC = [[AKTabBarController alloc] init];
     self.window.rootViewController = tabVC;
+    
+    AKLoginController *loginVC = [[AKLoginController alloc] init];
+    self.window.rootViewController = [[AKNavigationController alloc] initWithRootViewController:loginVC];
+    
     [self.window makeKeyAndVisible];
     
     [self _configBasicNavigationBar];
