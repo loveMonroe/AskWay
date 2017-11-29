@@ -6,8 +6,10 @@
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AKUITableViewController.h"
 
-@interface AKMentorController : UIViewController
+#import "AKMentorViewModel.h"
+
+@interface AKMentorController : AKUITableViewController <AKMentorViewModel *>
 
 @end

@@ -17,6 +17,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.viewModel createDataSource];
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 24) backgroundColor:LPColorWhite superView:nil];
+        
+        LPBaseLabel *label = [LPBaseLabel lp_labelWithFrame:CGRectMake(LPSpaceHorizontalEdge, 24, screenWidth - LPSpaceHorizontalEdge*2, 24) text:@"导师" font:SB_font(24) textColor:AKColor_Title];
+        [backView addSubview:label];
+        
+        return backView;
+    }
+    return nil;
+}
+
+#pragma mark - 重写父类方法
+- (Class)viewModelClass {
+    
+    return [AKMentorViewModel class];
 }
 
 - (void)didReceiveMemoryWarning {
