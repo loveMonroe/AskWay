@@ -39,7 +39,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 24) backgroundColor:LPColorClear superView:nil];
+        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 24) backgroundColor:LPColorWhite superView:nil];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(LPSpaceHorizontalEdge, 24- 1/screenScale, screenWidth - LPSpaceHorizontalEdge*2, 1/screenScale)];
         label.backgroundColor = LPColorLine;

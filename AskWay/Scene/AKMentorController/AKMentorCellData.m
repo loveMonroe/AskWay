@@ -16,7 +16,7 @@
         
         self.className = [NSClassFromString(@"AKMentorCell") class];
         self.cellIdentfier = NSStringFromClass(self.className);
-        self.cellHeight = 140.0;
+        self.cellHeight = 0.0;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.horizontalEdge = 12;
         [self loadCellDefaultConfig];

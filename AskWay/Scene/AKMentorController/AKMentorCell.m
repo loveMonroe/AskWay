@@ -63,7 +63,7 @@
         make.left.equalTo (weakSelf.headImgView);
         make.top.equalTo (weakSelf.headImgView.mas_bottom).offset (12);
         make.right.equalTo (weakSelf.backView).offset (-LPSpaceHorizontalEdge);
-        make.height.mas_lessThanOrEqualTo (80);
+        make.bottom.equalTo (weakSelf.backView).offset (-LPSpaceHorizontalEdge);
     }];
 }
 
@@ -75,6 +75,11 @@
     self.titleLabel.text = cellData.name;
     self.jobTitleLabel.text = cellData.jobTitle;
     self.descLabel.text = cellData.desc;
+    
+    if (!cellData.cellHeight) {
+        CGFloat descLabelHeight = [AKUILayoutTools getTxtHeight:cellData.desc forContentWidth:screenWidth - 2*LPSpaceHorizontalEdge fotFontSize:S_font(14)];
+        cellData.cellHeight = 140.0 - 40 + descLabelHeight;
+    }
 }
 
 - (void)layoutSubviews {

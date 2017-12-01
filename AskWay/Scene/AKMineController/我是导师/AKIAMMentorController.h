@@ -8,6 +8,8 @@
 
 #import "AKUITableViewController.h"
 
-@interface AKIAMMentorController : AKUITableViewController
+#import "AKIAMMentorViewModel.h"
+
+@interface AKIAMMentorController : AKUITableViewController <AKIAMMentorViewModel *>
 
 @end

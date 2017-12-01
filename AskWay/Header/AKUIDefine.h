@@ -25,6 +25,8 @@
 #define AKColor_Yellow      HEXCOLOR(0xFFAA01)    // 标题之后的提示信息--黄色
 #define AKColor_Blue        HEXCOLOR(0x4CA7FF)    // 按钮/分割线 蓝色
 #define AKColor_Gray        HEXCOLOR(0xCCCCCC)    // 分割线 灰色
+#define AKColor_Untouch     HEXCOLOR(0xD8D8D8)    // 不可点击 灰色
+#define AKColor_Red         HEXCOLOR(0xEB4A48)    // 金额 红色
 
 /*
  常用字体

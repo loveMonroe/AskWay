@@ -34,5 +34,16 @@ typedef NS_ENUM(NSInteger , AKRequestType) {
     AKRequestRefresh = 1,
 };
 
+typedef NS_ENUM(NSInteger, AKQuesResultType) {
+    //待解答
+    AKQuesResultTypeUndo = 0,
+    //解答中
+    AKQuesResultTypeIng = 1,
+    //已完成
+    AKQuesResultTypeFinish = 2,
+    //已关闭
+    AKQuesResultTypeClosed = 3,
+};
+
 
 #endif /* AKEnumDefine_h */

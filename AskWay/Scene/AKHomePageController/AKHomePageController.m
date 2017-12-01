@@ -8,6 +8,8 @@
 
 #import "AKHomePageController.h"
 
+#import "AKMessageCenterController.h"
+
 @interface AKHomePageController ()
 
 @end
@@ -17,6 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self lp_setupNavLeftItemWithTitle:@"消息" action:@selector(_gotoMessageCenter:)];
+}
+
+#pragma mark - UI and Action
+
+- (void)_gotoMessageCenter:(id)sender {
+    
+    AKMessageCenterController *vc = [[AKMessageCenterController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

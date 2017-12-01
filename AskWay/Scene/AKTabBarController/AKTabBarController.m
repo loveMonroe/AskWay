@@ -40,7 +40,7 @@
 
 - (void)_addChildViewControllers {
     
-    NSArray *vcNames =@[@"AKSettingController", @"AKMentorController", @"AKMineViewController"];
+    NSArray *vcNames =@[@"AKHomePageController", @"AKMentorController", @"AKMineViewController"];
     NSArray *vcTitle = @[@"首页", @"导师", @"我"];
     
     NSMutableArray *nvs = @[].mutableCopy;

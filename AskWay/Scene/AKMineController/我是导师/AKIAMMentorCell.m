@@ -68,10 +68,10 @@
     
     [self.contentView addSubview:self.backView];
     [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo (weakSelf.contentView).offset (6);
+        make.top.equalTo (weakSelf.contentView).offset (12);
         make.left.equalTo (weakSelf.contentView).offset (LPSpaceHorizontalEdge);
         make.right.equalTo (weakSelf.contentView).offset (-LPSpaceHorizontalEdge);
-        make.bottom.equalTo (weakSelf.contentView).offset (-6);
+        make.bottom.equalTo (weakSelf.contentView).offset (-12);
     }];
     
     [self.backView addSubview:self.backImgView];
@@ -120,7 +120,7 @@
 - (UIView *)backView {
     if (!_backView) {
         _backView = [[UIView alloc] init];
-        _backView.layer.cornerRadius = 8;
+        _backView.layer.cornerRadius = 4;
         _backView.layer.borderWidth = 0.5;
         _backView.layer.masksToBounds = YES;
         _backView.layer.borderColor = HEXACOLOR(0x000000, 0.1).CGColor;
@@ -132,7 +132,7 @@
 - (UIImageView *)backImgView {
     if (!_backImgView) {
         _backImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
-        _backView.backgroundColor = LPColorBrand;
+        _backView.backgroundColor = AKColor_Blue;
     }
     return _backImgView;
 }
@@ -171,7 +171,7 @@
         
         self.className = [NSClassFromString(@"AKIAMMentorQusCell") class];
         self.cellIdentfier = NSStringFromClass(self.className);
-        self.cellHeight = 124.0;
+        self.cellHeight = 116.0;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self loadCellDefaultConfig];
     }
@@ -198,6 +198,8 @@
 
 @interface AKIAMMentorQusCell ()
 
+@property (nonatomic, retain) UIView *backView;
+
 @property (nonatomic, retain) LPBaseLabel *qusLabel;
 
 @property (nonatomic, retain) UIButton *answerBtn;
@@ -210,15 +212,80 @@
 
 - (void)configUI {
     
+    WEAKSELF
+    
+    [self.contentView addSubview:self.backView];
+    [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo (weakSelf.contentView).offset (12);
+        make.left.equalTo (weakSelf.contentView).offset (LPSpaceHorizontalEdge);
+        make.right.equalTo (weakSelf.contentView).offset (-LPSpaceHorizontalEdge);
+        make.bottom.equalTo (weakSelf.contentView).offset (-12);
+    }];
+    
+    LPBaseLabel *label = [LPBaseLabel lp_labelWithText:@"今日新问题" font:S_font(14) textColor:AKColor_Title];
+    [self.backView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo (weakSelf.backView).offset (LPSpaceHorizontalEdge);
+        make.top.equalTo (weakSelf.backView).offset (23);
+        make.height.mas_equalTo (14);
+    }];
+    
+    [self.backView addSubview:self.qusLabel];
+    [self.qusLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo (label);
+        make.top.equalTo (label.mas_bottom).offset (8);
+        make.height.mas_equalTo (24);
+    }];
+    
+    [self.backView addSubview:self.answerBtn];
+    [self.answerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo (weakSelf.backView).offset (-LPSpaceHorizontalEdge);
+        make.width.mas_equalTo (80);
+        make.height.mas_equalTo (30);
+        make.centerY.equalTo (weakSelf.backView);
+    }];
 }
 
 #pragma mark - Data
 
 - (void)bindData:(AKIAMMentorQusCellData *)cellData {
     [super bindData:cellData];
+    
+    self.qusLabel.text = cellData.qusNumber.stringValue;
 }
 
 #pragma mark - Set and Get
+
+- (UIView *)backView {
+    if (!_backView) {
+        _backView = [[UIView alloc] init];
+        _backView.layer.cornerRadius = 4;
+        _backView.layer.borderWidth = 0.5;
+        _backView.layer.masksToBounds = YES;
+        _backView.layer.borderColor = HEXACOLOR(0x000000, 0.1).CGColor;
+        _backView.clipsToBounds = YES;
+    }
+    return _backView;
+}
+
+- (LPBaseLabel *)qusLabel {
+    if (!_qusLabel) {
+        _qusLabel = [LPBaseLabel lp_labelWithText:@"0" font:SB_font(24) textColor:AKColor_Title];
+    }
+    return _qusLabel;
+}
+
+- (UIButton *)answerBtn {
+    if (!_answerBtn) {
+        _answerBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_answerBtn setTitle:@"前去抢答" forState:UIControlStateNormal];
+        [_answerBtn.titleLabel setFont:S_font(14)];
+        [_answerBtn setTintColor:LPColorWhite];
+        _answerBtn.backgroundColor = AKColor_Blue;
+        _answerBtn.layer.cornerRadius = 12;
+    }
+    return _answerBtn;
+}
 
 @end
 

@@ -93,6 +93,7 @@
     label.font = font;
     label.textColor = textColor;
     label.textAlignment = textAlignment;
+    label.numberOfLines = 0;
     return label;
 }
 

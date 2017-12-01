@@ -38,6 +38,17 @@
 		462D0C6F1FCE919000B606BD /* AKMentorCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C6E1FCE919000B606BD /* AKMentorCellData.m */; };
 		462D0C721FCEAB0C00B606BD /* AKMentorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C711FCEAB0C00B606BD /* AKMentorViewModel.m */; };
 		462D0C751FCEB6DE00B606BD /* AKIAMMentorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C741FCEB6DE00B606BD /* AKIAMMentorCell.m */; };
+		462D0C781FCF9FAB00B606BD /* AKIAMMentorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C771FCF9FAB00B606BD /* AKIAMMentorViewModel.m */; };
+		462D0C7C1FCFAE5300B606BD /* AKMessageCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C7B1FCFAE5300B606BD /* AKMessageCenterController.m */; };
+		462D0C7F1FCFAE7100B606BD /* AKMessageCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C7E1FCFAE7100B606BD /* AKMessageCenterCell.m */; };
+		462D0C821FCFAE9700B606BD /* AKMessageCenterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C811FCFAE9700B606BD /* AKMessageCenterViewModel.m */; };
+		462D0C861FCFFC3900B606BD /* AKMyQuizController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C851FCFFC3900B606BD /* AKMyQuizController.m */; };
+		462D0C891FCFFC5C00B606BD /* AKMyQuizCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C881FCFFC5C00B606BD /* AKMyQuizCell.m */; };
+		462D0C8C1FCFFC8000B606BD /* AKMyQuizViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C8B1FCFFC8000B606BD /* AKMyQuizViewModel.m */; };
+		462D0C921FD1300F00B606BD /* AKUILayoutTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 462D0C911FD1300F00B606BD /* AKUILayoutTools.m */; };
+		463606AF1FD138C200516E83 /* AKMyAnswerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606AE1FD138C200516E83 /* AKMyAnswerViewModel.m */; };
+		463606B21FD138E200516E83 /* AKMyAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606B11FD138E200516E83 /* AKMyAnswerCell.m */; };
+		463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606B41FD1390100516E83 /* AKMyAnswerController.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -177,6 +188,28 @@
 		462D0C711FCEAB0C00B606BD /* AKMentorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMentorViewModel.m; path = Scene/AKMentorController/AKMentorViewModel.m; sourceTree = "<group>"; };
 		462D0C731FCEB6DE00B606BD /* AKIAMMentorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKIAMMentorCell.h; path = "Scene/AKMineController/我是导师/AKIAMMentorCell.h"; sourceTree = "<group>"; };
 		462D0C741FCEB6DE00B606BD /* AKIAMMentorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKIAMMentorCell.m; path = "Scene/AKMineController/我是导师/AKIAMMentorCell.m"; sourceTree = "<group>"; };
+		462D0C761FCF9FAB00B606BD /* AKIAMMentorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKIAMMentorViewModel.h; path = "Scene/AKMineController/我是导师/AKIAMMentorViewModel.h"; sourceTree = "<group>"; };
+		462D0C771FCF9FAB00B606BD /* AKIAMMentorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKIAMMentorViewModel.m; path = "Scene/AKMineController/我是导师/AKIAMMentorViewModel.m"; sourceTree = "<group>"; };
+		462D0C7A1FCFAE5300B606BD /* AKMessageCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMessageCenterController.h; path = "Scene/AKHomePageController/消息中心/AKMessageCenterController.h"; sourceTree = "<group>"; };
+		462D0C7B1FCFAE5300B606BD /* AKMessageCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMessageCenterController.m; path = "Scene/AKHomePageController/消息中心/AKMessageCenterController.m"; sourceTree = "<group>"; };
+		462D0C7D1FCFAE7100B606BD /* AKMessageCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMessageCenterCell.h; path = "Scene/AKHomePageController/消息中心/AKMessageCenterCell.h"; sourceTree = "<group>"; };
+		462D0C7E1FCFAE7100B606BD /* AKMessageCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMessageCenterCell.m; path = "Scene/AKHomePageController/消息中心/AKMessageCenterCell.m"; sourceTree = "<group>"; };
+		462D0C801FCFAE9700B606BD /* AKMessageCenterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMessageCenterViewModel.h; path = "Scene/AKHomePageController/消息中心/AKMessageCenterViewModel.h"; sourceTree = "<group>"; };
+		462D0C811FCFAE9700B606BD /* AKMessageCenterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMessageCenterViewModel.m; path = "Scene/AKHomePageController/消息中心/AKMessageCenterViewModel.m"; sourceTree = "<group>"; };
+		462D0C841FCFFC3900B606BD /* AKMyQuizController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyQuizController.h; path = "Scene/AKMineController/我的提问/AKMyQuizController.h"; sourceTree = "<group>"; };
+		462D0C851FCFFC3900B606BD /* AKMyQuizController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyQuizController.m; path = "Scene/AKMineController/我的提问/AKMyQuizController.m"; sourceTree = "<group>"; };
+		462D0C871FCFFC5C00B606BD /* AKMyQuizCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyQuizCell.h; path = "Scene/AKMineController/我的提问/AKMyQuizCell.h"; sourceTree = "<group>"; };
+		462D0C881FCFFC5C00B606BD /* AKMyQuizCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyQuizCell.m; path = "Scene/AKMineController/我的提问/AKMyQuizCell.m"; sourceTree = "<group>"; };
+		462D0C8A1FCFFC8000B606BD /* AKMyQuizViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyQuizViewModel.h; path = "Scene/AKMineController/我的提问/AKMyQuizViewModel.h"; sourceTree = "<group>"; };
+		462D0C8B1FCFFC8000B606BD /* AKMyQuizViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyQuizViewModel.m; path = "Scene/AKMineController/我的提问/AKMyQuizViewModel.m"; sourceTree = "<group>"; };
+		462D0C901FD1300F00B606BD /* AKUILayoutTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKUILayoutTools.h; path = Tool/AKUILayoutTools.h; sourceTree = "<group>"; };
+		462D0C911FD1300F00B606BD /* AKUILayoutTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKUILayoutTools.m; path = Tool/AKUILayoutTools.m; sourceTree = "<group>"; };
+		463606AD1FD138C200516E83 /* AKMyAnswerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyAnswerViewModel.h; path = "Scene/AKMineController/我的解答/AKMyAnswerViewModel.h"; sourceTree = "<group>"; };
+		463606AE1FD138C200516E83 /* AKMyAnswerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyAnswerViewModel.m; path = "Scene/AKMineController/我的解答/AKMyAnswerViewModel.m"; sourceTree = "<group>"; };
+		463606B01FD138E200516E83 /* AKMyAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyAnswerCell.h; path = "Scene/AKMineController/我的解答/AKMyAnswerCell.h"; sourceTree = "<group>"; };
+		463606B11FD138E200516E83 /* AKMyAnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyAnswerCell.m; path = "Scene/AKMineController/我的解答/AKMyAnswerCell.m"; sourceTree = "<group>"; };
+		463606B31FD1390100516E83 /* AKMyAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyAnswerController.h; path = "Scene/AKMineController/我的解答/AKMyAnswerController.h"; sourceTree = "<group>"; };
+		463606B41FD1390100516E83 /* AKMyAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyAnswerController.m; path = "Scene/AKMineController/我的解答/AKMyAnswerController.m"; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -412,6 +445,8 @@
 				4603B79B1FC7B32400295588 /* AKIAMMentorController.m */,
 				462D0C731FCEB6DE00B606BD /* AKIAMMentorCell.h */,
 				462D0C741FCEB6DE00B606BD /* AKIAMMentorCell.m */,
+				462D0C761FCF9FAB00B606BD /* AKIAMMentorViewModel.h */,
+				462D0C771FCF9FAB00B606BD /* AKIAMMentorViewModel.m */,
 			);
 			name = "我是导师";
 			sourceTree = "<group>";
@@ -436,6 +471,45 @@
 				4603B7A91FCD5B6E00295588 /* AKNicknameController.m */,
 			);
 			name = "个人资料";
+			sourceTree = "<group>";
+		};
+		462D0C791FCFADC300B606BD /* 消息中心 */ = {
+			isa = PBXGroup;
+			children = (
+				462D0C7D1FCFAE7100B606BD /* AKMessageCenterCell.h */,
+				462D0C7E1FCFAE7100B606BD /* AKMessageCenterCell.m */,
+				462D0C801FCFAE9700B606BD /* AKMessageCenterViewModel.h */,
+				462D0C811FCFAE9700B606BD /* AKMessageCenterViewModel.m */,
+				462D0C7A1FCFAE5300B606BD /* AKMessageCenterController.h */,
+				462D0C7B1FCFAE5300B606BD /* AKMessageCenterController.m */,
+			);
+			name = "消息中心";
+			sourceTree = "<group>";
+		};
+		462D0C831FCFFC0300B606BD /* 我的提问 */ = {
+			isa = PBXGroup;
+			children = (
+				462D0C871FCFFC5C00B606BD /* AKMyQuizCell.h */,
+				462D0C881FCFFC5C00B606BD /* AKMyQuizCell.m */,
+				462D0C8A1FCFFC8000B606BD /* AKMyQuizViewModel.h */,
+				462D0C8B1FCFFC8000B606BD /* AKMyQuizViewModel.m */,
+				462D0C841FCFFC3900B606BD /* AKMyQuizController.h */,
+				462D0C851FCFFC3900B606BD /* AKMyQuizController.m */,
+			);
+			name = "我的提问";
+			sourceTree = "<group>";
+		};
+		463606A91FD1384800516E83 /* 我的解答 */ = {
+			isa = PBXGroup;
+			children = (
+				463606B01FD138E200516E83 /* AKMyAnswerCell.h */,
+				463606B11FD138E200516E83 /* AKMyAnswerCell.m */,
+				463606AD1FD138C200516E83 /* AKMyAnswerViewModel.h */,
+				463606AE1FD138C200516E83 /* AKMyAnswerViewModel.m */,
+				463606B31FD1390100516E83 /* AKMyAnswerController.h */,
+				463606B41FD1390100516E83 /* AKMyAnswerController.m */,
+			);
+			name = "我的解答";
 			sourceTree = "<group>";
 		};
 		4695EFAD1FC26780000129A3 = {
@@ -533,6 +607,8 @@
 				4603B77A1FC52D1700295588 /* AKTool.h */,
 				4603B7771FC52BE400295588 /* AKToolCreateUI.h */,
 				4603B7781FC52BE400295588 /* AKToolCreateUI.m */,
+				462D0C901FD1300F00B606BD /* AKUILayoutTools.h */,
+				462D0C911FD1300F00B606BD /* AKUILayoutTools.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -645,6 +721,7 @@
 			children = (
 				4695F05C1FC2A910000129A3 /* AKHomePageController.h */,
 				4695F05D1FC2A910000129A3 /* AKHomePageController.m */,
+				462D0C791FCFADC300B606BD /* 消息中心 */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -671,6 +748,8 @@
 				4603B7971FC69C7300295588 /* AKMineViewModel.m */,
 				4603B7931FC69BEE00295588 /* AKMineViewController.h */,
 				4603B7941FC69BEE00295588 /* AKMineViewController.m */,
+				463606A91FD1384800516E83 /* 我的解答 */,
+				462D0C831FCFFC0300B606BD /* 我的提问 */,
 				4603B7A11FCD4A0F00295588 /* 个人资料 */,
 				4603B7991FC7B2DE00295588 /* 我是导师 */,
 				4603B77F1FC5490400295588 /* 设置 */,
@@ -912,10 +991,16 @@
 				4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */,
 				4603B7AA1FCD5B6E00295588 /* AKNicknameController.m in Sources */,
 				4695F06A1FC2A93B000129A3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				462D0C821FCFAE9700B606BD /* AKMessageCenterViewModel.m in Sources */,
+				462D0C781FCF9FAB00B606BD /* AKIAMMentorViewModel.m in Sources */,
+				462D0C891FCFFC5C00B606BD /* AKMyQuizCell.m in Sources */,
 				4603B7541FC513B800295588 /* NSArray+AKSectionData.m in Sources */,
 				4695F00D1FC281B2000129A3 /* AppDelegate+Root.m in Sources */,
 				4603B79C1FC7B32400295588 /* AKIAMMentorController.m in Sources */,
+				462D0C861FCFFC3900B606BD /* AKMyQuizController.m in Sources */,
 				4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */,
+				463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */,
+				462D0C921FD1300F00B606BD /* AKUILayoutTools.m in Sources */,
 				4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */,
 				4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */,
 				4603B7601FC51CCF00295588 /* AKUITableViewController.m in Sources */,
@@ -923,6 +1008,8 @@
 				4603B7661FC51E4D00295588 /* AKUITableViewCellData.m in Sources */,
 				4695F0021FC27B0D000129A3 /* AKTabBarController.m in Sources */,
 				4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */,
+				462D0C7C1FCFAE5300B606BD /* AKMessageCenterController.m in Sources */,
+				463606AF1FD138C200516E83 /* AKMyAnswerViewModel.m in Sources */,
 				4603B7A01FCCF87800295588 /* AKLoginController.m in Sources */,
 				4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */,
 				4603B7A41FCD4B8900295588 /* AKPersonDataViewController.m in Sources */,
@@ -933,6 +1020,7 @@
 				4603B7A71FCD4BC300295588 /* AKPersonDataViewModel.m in Sources */,
 				4695F0801FC2B2D5000129A3 /* AKRefreshViewController.m in Sources */,
 				4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */,
+				463606B21FD138E200516E83 /* AKMyAnswerCell.m in Sources */,
 				4603B74C1FC5116500295588 /* AKLoadingView.m in Sources */,
 				4603B77D1FC52D8700295588 /* UIView+GESAdditions.m in Sources */,
 				4603B74D1FC5116500295588 /* AKLoadNoDataView.m in Sources */,
@@ -947,6 +1035,7 @@
 				462D0C6F1FCE919000B606BD /* AKMentorCellData.m in Sources */,
 				4695F06B1FC2A93B000129A3 /* UIViewController+CustomBar.m in Sources */,
 				4603B7821FC5496500295588 /* AKSettingController.m in Sources */,
+				462D0C7F1FCFAE7100B606BD /* AKMessageCenterCell.m in Sources */,
 				4603B75A1FC51A4700295588 /* AKRefreshHeader.m in Sources */,
 				4603B7921FC6767600295588 /* AKCustomInfoCellData.m in Sources */,
 				4695F0691FC2A93B000129A3 /* LPKeyBoardObject.m in Sources */,
@@ -954,6 +1043,7 @@
 				4603B78E1FC6763200295588 /* AKCustomInfoCell.m in Sources */,
 				4603B7571FC513FC00295588 /* UITableView+EmptyData.m in Sources */,
 				4603B7631FC51D0C00295588 /* AKUITableViewModel.m in Sources */,
+				462D0C8C1FCFFC8000B606BD /* AKMyQuizViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
