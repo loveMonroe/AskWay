@@ -1,49 +1,43 @@
 //
-//  AKIAMMentorController.m
+//  AKMyPurseController.m
 //  AskWay
 //
-//  Created by damion on 2017/11/24.
+//  Created by damion on 2017/12/1.
 //  Copyright © 2017年 sky. All rights reserved.
 //
 
-#import "AKIAMMentorController.h"
-
-#import "AKMyAnswerController.h"
 #import "AKMyPurseController.h"
 
-@interface AKIAMMentorController ()
+@interface AKMyPurseController ()
 
 @end
 
-@implementation AKIAMMentorController
+@implementation AKMyPurseController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.title = @"账户明细";
+    
     [self.viewModel createDataSource];
     [self.tableView reloadData];
 }
+
+#pragma mark - UI and Action
+
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (indexPath.section == 1 && indexPath.row == 0) {
-        AKMyAnswerController *vc = [[AKMyAnswerController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.section == 1 && indexPath.row == 1) {
-        AKMyPurseController *vc = [[AKMyPurseController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 12) backgroundColor:LPColorWhite superView:nil];
+        UIView *backView = [AKToolCreateUI createUIView:CGRectMake(0, 0, screenWidth, 24) backgroundColor:LPColorWhite superView:nil];
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(LPSpaceHorizontalEdge, 12- 1/screenScale, screenWidth - LPSpaceHorizontalEdge*2, 1/screenScale)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(LPSpaceHorizontalEdge, 24- 1/screenScale, screenWidth - LPSpaceHorizontalEdge*2, 1/screenScale)];
         label.backgroundColor = LPColorLine;
         [backView addSubview:label];
         return backView;
@@ -54,14 +48,13 @@
 #pragma mark - 重写父类方法
 - (Class)viewModelClass {
     
-    return [AKIAMMentorViewModel class];
+    return [AKMyPurseViewModel class];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation

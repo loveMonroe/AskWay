@@ -33,7 +33,7 @@
     cellData3.tableViewCellSelectionStyle = UITableViewCellSelectionStyleDefault;
     
     AKCustomInfoCellData *cellData4 = [[AKCustomInfoCellData alloc] init];
-    cellData4.titleString = @"我的解答";
+    cellData4.titleString = @"我的钱包";
     cellData4.titleFont = S_font(16);
     cellData4.titleColor = AKColor_Title;
     cellData4.descString = @"128.5元";

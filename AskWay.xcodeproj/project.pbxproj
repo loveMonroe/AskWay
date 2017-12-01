@@ -49,6 +49,9 @@
 		463606AF1FD138C200516E83 /* AKMyAnswerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606AE1FD138C200516E83 /* AKMyAnswerViewModel.m */; };
 		463606B21FD138E200516E83 /* AKMyAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606B11FD138E200516E83 /* AKMyAnswerCell.m */; };
 		463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606B41FD1390100516E83 /* AKMyAnswerController.m */; };
+		463606B91FD153B700516E83 /* AKMyPurseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606B81FD153B700516E83 /* AKMyPurseController.m */; };
+		463606BC1FD153CE00516E83 /* AKMyPurseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606BB1FD153CE00516E83 /* AKMyPurseCell.m */; };
+		463606BF1FD153F800516E83 /* AKMyPurseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 463606BE1FD153F800516E83 /* AKMyPurseViewModel.m */; };
 		4695EFC41FC26780000129A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC21FC26780000129A3 /* Main.storyboard */; };
 		4695EFC61FC26780000129A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC51FC26780000129A3 /* Assets.xcassets */; };
 		4695EFC91FC26780000129A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695EFC71FC26780000129A3 /* LaunchScreen.storyboard */; };
@@ -210,6 +213,12 @@
 		463606B11FD138E200516E83 /* AKMyAnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyAnswerCell.m; path = "Scene/AKMineController/我的解答/AKMyAnswerCell.m"; sourceTree = "<group>"; };
 		463606B31FD1390100516E83 /* AKMyAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyAnswerController.h; path = "Scene/AKMineController/我的解答/AKMyAnswerController.h"; sourceTree = "<group>"; };
 		463606B41FD1390100516E83 /* AKMyAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyAnswerController.m; path = "Scene/AKMineController/我的解答/AKMyAnswerController.m"; sourceTree = "<group>"; };
+		463606B71FD153B700516E83 /* AKMyPurseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyPurseController.h; path = "Scene/AKMineController/我的钱包/AKMyPurseController.h"; sourceTree = "<group>"; };
+		463606B81FD153B700516E83 /* AKMyPurseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyPurseController.m; path = "Scene/AKMineController/我的钱包/AKMyPurseController.m"; sourceTree = "<group>"; };
+		463606BA1FD153CE00516E83 /* AKMyPurseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyPurseCell.h; path = "Scene/AKMineController/我的钱包/AKMyPurseCell.h"; sourceTree = "<group>"; };
+		463606BB1FD153CE00516E83 /* AKMyPurseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyPurseCell.m; path = "Scene/AKMineController/我的钱包/AKMyPurseCell.m"; sourceTree = "<group>"; };
+		463606BD1FD153F800516E83 /* AKMyPurseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKMyPurseViewModel.h; path = "Scene/AKMineController/我的钱包/AKMyPurseViewModel.h"; sourceTree = "<group>"; };
+		463606BE1FD153F800516E83 /* AKMyPurseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKMyPurseViewModel.m; path = "Scene/AKMineController/我的钱包/AKMyPurseViewModel.m"; sourceTree = "<group>"; };
 		4695EFB61FC26780000129A3 /* AskWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695EFC31FC26780000129A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4695EFC51FC26780000129A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -512,6 +521,19 @@
 			name = "我的解答";
 			sourceTree = "<group>";
 		};
+		463606B61FD1539100516E83 /* 我的钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				463606BA1FD153CE00516E83 /* AKMyPurseCell.h */,
+				463606BB1FD153CE00516E83 /* AKMyPurseCell.m */,
+				463606BD1FD153F800516E83 /* AKMyPurseViewModel.h */,
+				463606BE1FD153F800516E83 /* AKMyPurseViewModel.m */,
+				463606B71FD153B700516E83 /* AKMyPurseController.h */,
+				463606B81FD153B700516E83 /* AKMyPurseController.m */,
+			);
+			name = "我的钱包";
+			sourceTree = "<group>";
+		};
 		4695EFAD1FC26780000129A3 = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +770,7 @@
 				4603B7971FC69C7300295588 /* AKMineViewModel.m */,
 				4603B7931FC69BEE00295588 /* AKMineViewController.h */,
 				4603B7941FC69BEE00295588 /* AKMineViewController.m */,
+				463606B61FD1539100516E83 /* 我的钱包 */,
 				463606A91FD1384800516E83 /* 我的解答 */,
 				462D0C831FCFFC0300B606BD /* 我的提问 */,
 				4603B7A11FCD4A0F00295588 /* 个人资料 */,
@@ -997,10 +1020,12 @@
 				4603B7541FC513B800295588 /* NSArray+AKSectionData.m in Sources */,
 				4695F00D1FC281B2000129A3 /* AppDelegate+Root.m in Sources */,
 				4603B79C1FC7B32400295588 /* AKIAMMentorController.m in Sources */,
+				463606BF1FD153F800516E83 /* AKMyPurseViewModel.m in Sources */,
 				462D0C861FCFFC3900B606BD /* AKMyQuizController.m in Sources */,
 				4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */,
 				463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */,
 				462D0C921FD1300F00B606BD /* AKUILayoutTools.m in Sources */,
+				463606BC1FD153CE00516E83 /* AKMyPurseCell.m in Sources */,
 				4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */,
 				4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */,
 				4603B7601FC51CCF00295588 /* AKUITableViewController.m in Sources */,
@@ -1010,6 +1035,7 @@
 				4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */,
 				462D0C7C1FCFAE5300B606BD /* AKMessageCenterController.m in Sources */,
 				463606AF1FD138C200516E83 /* AKMyAnswerViewModel.m in Sources */,
+				463606B91FD153B700516E83 /* AKMyPurseController.m in Sources */,
 				4603B7A01FCCF87800295588 /* AKLoginController.m in Sources */,
 				4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */,
 				4603B7A41FCD4B8900295588 /* AKPersonDataViewController.m in Sources */,
