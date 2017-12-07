@@ -9,6 +9,8 @@
 #import "AKHomePageController.h"
 
 #import "AKMessageCenterController.h"
+#import "AKPublishController.h"
+#import "AKNavigationController.h"
 
 @interface AKHomePageController ()
 
@@ -21,6 +23,7 @@
     // Do any additional setup after loading the view.
     
     [self lp_setupNavLeftItemWithTitle:@"消息" action:@selector(_gotoMessageCenter:)];
+    [self lp_setupNavRightItemWithTitle:@"发布" action:@selector(_gotoPublishPage:)];
 }
 
 #pragma mark - UI and Action
@@ -29,6 +32,12 @@
     
     AKMessageCenterController *vc = [[AKMessageCenterController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)_gotoPublishPage:(id)sender {
+    
+    AKNavigationController *vc = [[AKNavigationController alloc] initWithRootViewController:[[AKPublishController alloc] init]];
+    [self.navigationController presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

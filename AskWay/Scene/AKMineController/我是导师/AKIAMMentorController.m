@@ -10,6 +10,8 @@
 
 #import "AKMyAnswerController.h"
 #import "AKMyPurseController.h"
+#import "AKMentorCertifyController.h"
+#import "AKGoodAtFieldController.h"
 
 @interface AKIAMMentorController ()
 
@@ -30,6 +32,10 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        AKGoodAtFieldController *vc = [[AKGoodAtFieldController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     if (indexPath.section == 1 && indexPath.row == 0) {
         AKMyAnswerController *vc = [[AKMyAnswerController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
