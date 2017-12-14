@@ -10,6 +10,6 @@
 
 #import "AKMyAnswerViewModel.h"
 
-@interface AKMyAnswerController : AKUITableViewController
+@interface AKMyAnswerController : AKUITableViewController <AKMyAnswerViewModel *>
 
 @end

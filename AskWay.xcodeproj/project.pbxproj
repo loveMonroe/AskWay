@@ -112,6 +112,11 @@
 		4695F0791FC2AA8B000129A3 /* AKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F0781FC2AA8B000129A3 /* AKBaseViewController.m */; };
 		4695F07C1FC2AAF1000129A3 /* AKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F07B1FC2AAF1000129A3 /* AKViewModel.m */; };
 		4695F0801FC2B2D5000129A3 /* AKRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695F07F1FC2B2D5000129A3 /* AKRefreshViewController.m */; };
+		46E72C421FE0FEB100BCE1EF /* AKLatestQuzController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C411FE0FEB100BCE1EF /* AKLatestQuzController.m */; };
+		46E72C451FE0FEE100BCE1EF /* AKFinishingQuzController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C441FE0FEE100BCE1EF /* AKFinishingQuzController.m */; };
+		46E72C481FE0FF0200BCE1EF /* AKLatestQuzViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C471FE0FF0200BCE1EF /* AKLatestQuzViewModel.m */; };
+		46E72C4B1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C4A1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m */; };
+		46E72C4E1FE1007B00BCE1EF /* AKQuzCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C4D1FE1007B00BCE1EF /* AKQuzCenterController.m */; };
 		A824C906B6F453BFC35020D8 /* libPods-AskWay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07BA6D5B117D03E99532BB1 /* libPods-AskWay.a */; };
 /* End PBXBuildFile section */
 
@@ -319,6 +324,16 @@
 		4695F07D1FC2B0AF000129A3 /* AKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKDefine.h; path = Header/AKDefine.h; sourceTree = "<group>"; };
 		4695F07E1FC2B2D5000129A3 /* AKRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKRefreshViewController.h; path = AKKit/AKRefreshViewController.h; sourceTree = "<group>"; };
 		4695F07F1FC2B2D5000129A3 /* AKRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKRefreshViewController.m; path = AKKit/AKRefreshViewController.m; sourceTree = "<group>"; };
+		46E72C401FE0FEB100BCE1EF /* AKLatestQuzController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKLatestQuzController.h; path = "Scene/AKMineController/问题中心/最新问题/AKLatestQuzController.h"; sourceTree = "<group>"; };
+		46E72C411FE0FEB100BCE1EF /* AKLatestQuzController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKLatestQuzController.m; path = "Scene/AKMineController/问题中心/最新问题/AKLatestQuzController.m"; sourceTree = "<group>"; };
+		46E72C431FE0FEE100BCE1EF /* AKFinishingQuzController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKFinishingQuzController.h; path = "Scene/AKMineController/问题中心/即将结束/AKFinishingQuzController.h"; sourceTree = "<group>"; };
+		46E72C441FE0FEE100BCE1EF /* AKFinishingQuzController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKFinishingQuzController.m; path = "Scene/AKMineController/问题中心/即将结束/AKFinishingQuzController.m"; sourceTree = "<group>"; };
+		46E72C461FE0FF0200BCE1EF /* AKLatestQuzViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKLatestQuzViewModel.h; path = "Scene/AKMineController/问题中心/最新问题/AKLatestQuzViewModel.h"; sourceTree = "<group>"; };
+		46E72C471FE0FF0200BCE1EF /* AKLatestQuzViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKLatestQuzViewModel.m; path = "Scene/AKMineController/问题中心/最新问题/AKLatestQuzViewModel.m"; sourceTree = "<group>"; };
+		46E72C491FE0FF1900BCE1EF /* AKFinishingQuzViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKFinishingQuzViewModel.h; path = "Scene/AKMineController/问题中心/即将结束/AKFinishingQuzViewModel.h"; sourceTree = "<group>"; };
+		46E72C4A1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKFinishingQuzViewModel.m; path = "Scene/AKMineController/问题中心/即将结束/AKFinishingQuzViewModel.m"; sourceTree = "<group>"; };
+		46E72C4C1FE1007B00BCE1EF /* AKQuzCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKQuzCenterController.h; path = "Scene/AKMineController/问题中心/AKQuzCenterController.h"; sourceTree = "<group>"; };
+		46E72C4D1FE1007B00BCE1EF /* AKQuzCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKQuzCenterController.m; path = "Scene/AKMineController/问题中心/AKQuzCenterController.m"; sourceTree = "<group>"; };
 		A89308AC6A1B14BCC9BD975B /* Pods-AskWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-AskWay/Pods-AskWay.release.xcconfig"; sourceTree = "<group>"; };
 		D07BA6D5B117D03E99532BB1 /* libPods-AskWay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AskWay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -841,6 +856,7 @@
 				4603B7971FC69C7300295588 /* AKMineViewModel.m */,
 				4603B7931FC69BEE00295588 /* AKMineViewController.h */,
 				4603B7941FC69BEE00295588 /* AKMineViewController.m */,
+				46E72C3D1FE0FE2F00BCE1EF /* 问题中心 */,
 				463606C41FD62FD200516E83 /* 导师认证 */,
 				463606B61FD1539100516E83 /* 我的钱包 */,
 				463606A91FD1384800516E83 /* 我的解答 */,
@@ -882,6 +898,39 @@
 				4603B75C1FC51B9E00295588 /* AKRefreshFooter.m */,
 			);
 			name = AKView;
+			sourceTree = "<group>";
+		};
+		46E72C3D1FE0FE2F00BCE1EF /* 问题中心 */ = {
+			isa = PBXGroup;
+			children = (
+				46E72C4C1FE1007B00BCE1EF /* AKQuzCenterController.h */,
+				46E72C4D1FE1007B00BCE1EF /* AKQuzCenterController.m */,
+				46E72C3F1FE0FE8000BCE1EF /* 即将结束 */,
+				46E72C3E1FE0FE7800BCE1EF /* 最新问题 */,
+			);
+			name = "问题中心";
+			sourceTree = "<group>";
+		};
+		46E72C3E1FE0FE7800BCE1EF /* 最新问题 */ = {
+			isa = PBXGroup;
+			children = (
+				46E72C401FE0FEB100BCE1EF /* AKLatestQuzController.h */,
+				46E72C411FE0FEB100BCE1EF /* AKLatestQuzController.m */,
+				46E72C461FE0FF0200BCE1EF /* AKLatestQuzViewModel.h */,
+				46E72C471FE0FF0200BCE1EF /* AKLatestQuzViewModel.m */,
+			);
+			name = "最新问题";
+			sourceTree = "<group>";
+		};
+		46E72C3F1FE0FE8000BCE1EF /* 即将结束 */ = {
+			isa = PBXGroup;
+			children = (
+				46E72C431FE0FEE100BCE1EF /* AKFinishingQuzController.h */,
+				46E72C441FE0FEE100BCE1EF /* AKFinishingQuzController.m */,
+				46E72C491FE0FF1900BCE1EF /* AKFinishingQuzViewModel.h */,
+				46E72C4A1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m */,
+			);
+			name = "即将结束";
 			sourceTree = "<group>";
 		};
 		84FAD1354B1644C6FE98D9E6 /* Pods */ = {
@@ -1035,13 +1084,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AskWay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0B92AF224C14E36C2CF49A10 /* [CP] Copy Pods Resources */ = {
@@ -1050,9 +1102,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AskWay/Pods-AskWay-resources.sh",
+				"${PODS_ROOT}/LPUIKit/LPUIKit/Resources/LPUIKit.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1098,6 +1155,7 @@
 				463606BF1FD153F800516E83 /* AKMyPurseViewModel.m in Sources */,
 				462D0C861FCFFC3900B606BD /* AKMyQuizController.m in Sources */,
 				4603B7791FC52BE400295588 /* AKToolCreateUI.m in Sources */,
+				46E72C451FE0FEE100BCE1EF /* AKFinishingQuzController.m in Sources */,
 				463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */,
 				462D0C921FD1300F00B606BD /* AKUILayoutTools.m in Sources */,
 				463606BC1FD153CE00516E83 /* AKMyPurseCell.m in Sources */,
@@ -1119,6 +1177,7 @@
 				4603B75D1FC51B9E00295588 /* AKRefreshFooter.m in Sources */,
 				4695F05E1FC2A910000129A3 /* AKHomePageController.m in Sources */,
 				4603B7A71FCD4BC300295588 /* AKPersonDataViewModel.m in Sources */,
+				46E72C4B1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m in Sources */,
 				463606CA1FD6304700516E83 /* AKMentorCertifyViewModel.m in Sources */,
 				4695F0801FC2B2D5000129A3 /* AKRefreshViewController.m in Sources */,
 				4603B7981FC69C7300295588 /* AKMineViewModel.m in Sources */,
@@ -1126,6 +1185,8 @@
 				463606B21FD138E200516E83 /* AKMyAnswerCell.m in Sources */,
 				4603B74C1FC5116500295588 /* AKLoadingView.m in Sources */,
 				4603B77D1FC52D8700295588 /* UIView+GESAdditions.m in Sources */,
+				46E72C4E1FE1007B00BCE1EF /* AKQuzCenterController.m in Sources */,
+				46E72C481FE0FF0200BCE1EF /* AKLatestQuzViewModel.m in Sources */,
 				4603B74D1FC5116500295588 /* AKLoadNoDataView.m in Sources */,
 				462D0C721FCEAB0C00B606BD /* AKMentorViewModel.m in Sources */,
 				4603B76C1FC520FD00295588 /* AKNetworkService.m in Sources */,
@@ -1136,6 +1197,7 @@
 				4695EFF91FC275D7000129A3 /* main.m in Sources */,
 				461B50E61FD6338C005C939B /* AKGoodAtFieldController.m in Sources */,
 				4603B7691FC51ECF00295588 /* AKUITableViewCell.m in Sources */,
+				46E72C421FE0FEB100BCE1EF /* AKLatestQuzController.m in Sources */,
 				462D0C6F1FCE919000B606BD /* AKMentorCellData.m in Sources */,
 				4695F06B1FC2A93B000129A3 /* UIViewController+CustomBar.m in Sources */,
 				4603B7821FC5496500295588 /* AKSettingController.m in Sources */,

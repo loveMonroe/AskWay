@@ -25,6 +25,8 @@
 
 @property (nonatomic, assign) AKQuesResultType resultType;
 
+@property (nonatomic, assign) BOOL showSerialNum;
+
 @end
 
 

@@ -23,6 +23,7 @@ pod 'MGSwipeTableCell'
 pod 'BlocksKit'
 pod 'MLeaksFinder'
 pod 'MJRefresh'
+pod 'SGPagingView'
 
 
 

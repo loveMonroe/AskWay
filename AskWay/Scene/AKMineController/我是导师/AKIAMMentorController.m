@@ -12,6 +12,7 @@
 #import "AKMyPurseController.h"
 #import "AKMentorCertifyController.h"
 #import "AKGoodAtFieldController.h"
+#import "AKQuzCenterController.h"
 
 @interface AKIAMMentorController ()
 
@@ -35,8 +36,10 @@
     if (indexPath.section == 0 && indexPath.row == 0) {
         AKGoodAtFieldController *vc = [[AKGoodAtFieldController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-    }
-    if (indexPath.section == 1 && indexPath.row == 0) {
+    } else if (indexPath.section == 0 && indexPath.row == 1) {
+        AKQuzCenterController *vc = [[AKQuzCenterController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.section == 1 && indexPath.row == 0) {
         AKMyAnswerController *vc = [[AKMyAnswerController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.section == 1 && indexPath.row == 1) {

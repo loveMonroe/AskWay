@@ -43,6 +43,8 @@ typedef NS_ENUM(NSInteger, AKQuesResultType) {
     AKQuesResultTypeFinish = 2,
     //已关闭
     AKQuesResultTypeClosed = 3,
+    //抢答
+    AKQuesResultTypeQuick = 4,
 };
 
 

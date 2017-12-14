@@ -54,11 +54,12 @@ PODS:
   - PINCache (2.3)
   - PinYin4Objc (1.1.1)
   - PocketSVG (2.2.1)
-  - SDCycleScrollView (1.74):
+  - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
+  - SGPagingView (1.3.4)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
 
@@ -81,6 +82,7 @@ DEPENDENCIES:
   - PocketSVG
   - SDCycleScrollView
   - SDWebImage
+  - SGPagingView
   - YTKNetwork
 
 SPEC CHECKSUMS:
@@ -100,10 +102,11 @@ SPEC CHECKSUMS:
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
   PocketSVG: 51c4d5cb9ae7623d4494f439f69747394bad5d67
-  SDCycleScrollView: f821215226f6146a35470721a9d6e83ec5cfb04b
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SGPagingView: 5e8c601e46fa83f4a1b4f4428916db0f3e0aee41
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 3d21d1f7547a4011bea70bffcff0d5e6e5e38550
+PODFILE CHECKSUM: a33f327a8c49c60ff3fa9b4c5fe9accf88bcc6cb
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

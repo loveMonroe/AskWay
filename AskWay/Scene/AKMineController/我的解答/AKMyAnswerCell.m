@@ -40,6 +40,7 @@
     self.moneyNum = @100;
     self.quesType = @"面试指导";
     self.resultType = AKQuesResultTypeUndo;
+    self.showSerialNum = YES;
 }
 
 
@@ -160,6 +161,11 @@
             self.answerBtn.backgroundColor = AKColor_Untouch;
             break;
         }
+        case AKQuesResultTypeQuick: {
+            [self.answerBtn setTitle:@"抢答" forState:UIControlStateNormal];
+            self.answerBtn.backgroundColor = AKColor_Blue;
+            break;
+        }
         default: {
             self.resultLabel.text = @"待解答";
             [self.answerBtn setTitle:@"解答" forState:UIControlStateNormal];
@@ -178,7 +184,28 @@
         CGFloat titleLabelHeight = [AKUILayoutTools getTxtHeight:cellData.titleString forContentWidth:screenWidth - 2*LPSpaceHorizontalEdge fotFontSize:S_font(16)];
         
         cellData.cellHeight = 144.0 - 16 + titleLabelHeight;
+        
+        if (cellData.showSerialNum == NO) {
+            cellData.cellHeight -= 22.0;
+        }
     }
+    
+    WEAKSELF
+    [self.serialLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo (weakSelf.contentView).offset (cellData.showSerialNum ?  LPSpaceHorizontalEdge : 0);
+        make.left.equalTo (weakSelf.contentView).offset (cellData.showSerialNum ?  LPSpaceHorizontalEdge : 0);
+        make.height.mas_equalTo (cellData.showSerialNum ? 14 : 0);
+    }];
+    
+    self.serialLabel.hidden = !cellData.showSerialNum;
+    
+    [self.resultLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo (weakSelf.serialLabel);
+        make.right.equalTo (weakSelf.contentView).offset (-LPSpaceHorizontalEdge);
+        make.height.mas_equalTo (cellData.showSerialNum ? 14 : 0);
+    }];
+    
+    self.resultLabel.hidden = !cellData.showSerialNum;
 }
 
 #pragma mark - Set and Get
