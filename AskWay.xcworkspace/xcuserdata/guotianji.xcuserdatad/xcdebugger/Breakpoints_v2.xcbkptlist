@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AskWay/API/AKRequest.m"
+            timestampString = "536922269.158525"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-startRequest"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AskWay/Scene/AKHomePageController/AKHomePageController.m"
+            timestampString = "536922269.15863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35-[AKHomePageController viewDidLoad]_block_invoke"
+                  moduleName = "AskWay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guotianji/Documents/%E6%96%87%E7%A8%BF%20-%20damion%E7%9A%84iMac/workplace_git/AskWay/AskWay/Scene/AKHomePageController/AKHomePageController.m"
+                  timestampString = "536937482.177443"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35-[AKHomePageController viewDidLoad]_block_invoke_2"
+                  moduleName = "AskWay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guotianji/Documents/%E6%96%87%E7%A8%BF%20-%20damion%E7%9A%84iMac/workplace_git/AskWay/AskWay/Scene/AKHomePageController/AKHomePageController.m"
+                  timestampString = "536937482.179423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AskWay/Scene/AKHomePageController/AKHomePageController.m"
+            timestampString = "536922269.158703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AskWay/API/AKRequest.m"
+            timestampString = "536922390.188915"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-startRequest"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__25-[AKRequest startRequest]_block_invoke"
+                  moduleName = "AskWay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guotianji/Documents/%E6%96%87%E7%A8%BF%20-%20damion%E7%9A%84iMac/workplace_git/AskWay/AskWay/API/AKRequest.m"
+                  timestampString = "536937482.187036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__25-[AKRequest startRequest]_block_invoke_2"
+                  moduleName = "AskWay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guotianji/Documents/%E6%96%87%E7%A8%BF%20-%20damion%E7%9A%84iMac/workplace_git/AskWay/AskWay/API/AKRequest.m"
+                  timestampString = "536937482.1889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

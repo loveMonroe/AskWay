@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Root.h"
 
+#import "YTKNetworkConfig.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +24,10 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = @"http://116.62.151.8:8080";
+    
     [self configRootViewController];
     
     return YES;

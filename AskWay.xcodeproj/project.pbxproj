@@ -118,6 +118,11 @@
 		46E72C4B1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C4A1FE0FF1900BCE1EF /* AKFinishingQuzViewModel.m */; };
 		46E72C4E1FE1007B00BCE1EF /* AKQuzCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E72C4D1FE1007B00BCE1EF /* AKQuzCenterController.m */; };
 		A824C906B6F453BFC35020D8 /* libPods-AskWay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07BA6D5B117D03E99532BB1 /* libPods-AskWay.a */; };
+		B62495BB2000BA8C003287D0 /* AKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B62495BA2000BA8C003287D0 /* AKRequest.m */; };
+		B62495BF2000BCF6003287D0 /* AKViewAssistTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B62495BE2000BCF6003287D0 /* AKViewAssistTools.m */; };
+		B62495C22000BE91003287D0 /* AKJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B62495C12000BE91003287D0 /* AKJsonHelper.m */; };
+		B62495C52000C10F003287D0 /* AKRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = B62495C32000C10F003287D0 /* AKRSA.m */; };
+		B62495C82000C2F4003287D0 /* AKUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B62495C72000C2F4003287D0 /* AKUserAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +340,17 @@
 		46E72C4C1FE1007B00BCE1EF /* AKQuzCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKQuzCenterController.h; path = "Scene/AKMineController/问题中心/AKQuzCenterController.h"; sourceTree = "<group>"; };
 		46E72C4D1FE1007B00BCE1EF /* AKQuzCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKQuzCenterController.m; path = "Scene/AKMineController/问题中心/AKQuzCenterController.m"; sourceTree = "<group>"; };
 		A89308AC6A1B14BCC9BD975B /* Pods-AskWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-AskWay/Pods-AskWay.release.xcconfig"; sourceTree = "<group>"; };
+		B62495B92000BA8C003287D0 /* AKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKRequest.h; path = API/AKRequest.h; sourceTree = "<group>"; };
+		B62495BA2000BA8C003287D0 /* AKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AKRequest.m; path = API/AKRequest.m; sourceTree = "<group>"; };
+		B62495BC2000BC28003287D0 /* AKErrorCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKErrorCode.h; path = Header/AKErrorCode.h; sourceTree = "<group>"; };
+		B62495BD2000BCF6003287D0 /* AKViewAssistTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKViewAssistTools.h; path = Tool/AKViewAssistTools.h; sourceTree = "<group>"; };
+		B62495BE2000BCF6003287D0 /* AKViewAssistTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKViewAssistTools.m; path = Tool/AKViewAssistTools.m; sourceTree = "<group>"; };
+		B62495C02000BE91003287D0 /* AKJsonHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKJsonHelper.h; path = Tool/AKJsonHelper.h; sourceTree = "<group>"; };
+		B62495C12000BE91003287D0 /* AKJsonHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AKJsonHelper.m; path = Tool/AKJsonHelper.m; sourceTree = "<group>"; };
+		B62495C32000C10F003287D0 /* AKRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKRSA.m; path = Tool/AKRSA.m; sourceTree = "<group>"; };
+		B62495C42000C10F003287D0 /* AKRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKRSA.h; path = Tool/AKRSA.h; sourceTree = "<group>"; };
+		B62495C62000C2F4003287D0 /* AKUserAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AKUserAPI.h; path = API/AKUserAPI.h; sourceTree = "<group>"; };
+		B62495C72000C2F4003287D0 /* AKUserAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AKUserAPI.m; path = API/AKUserAPI.m; sourceTree = "<group>"; };
 		D07BA6D5B117D03E99532BB1 /* libPods-AskWay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AskWay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -714,8 +730,14 @@
 				4603B77A1FC52D1700295588 /* AKTool.h */,
 				4603B7771FC52BE400295588 /* AKToolCreateUI.h */,
 				4603B7781FC52BE400295588 /* AKToolCreateUI.m */,
+				B62495BD2000BCF6003287D0 /* AKViewAssistTools.h */,
+				B62495BE2000BCF6003287D0 /* AKViewAssistTools.m */,
 				462D0C901FD1300F00B606BD /* AKUILayoutTools.h */,
 				462D0C911FD1300F00B606BD /* AKUILayoutTools.m */,
+				B62495C02000BE91003287D0 /* AKJsonHelper.h */,
+				B62495C12000BE91003287D0 /* AKJsonHelper.m */,
+				B62495C42000C10F003287D0 /* AKRSA.h */,
+				B62495C32000C10F003287D0 /* AKRSA.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -723,6 +745,10 @@
 		4695EFF01FC274F0000129A3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B62495B92000BA8C003287D0 /* AKRequest.h */,
+				B62495BA2000BA8C003287D0 /* AKRequest.m */,
+				B62495C62000C2F4003287D0 /* AKUserAPI.h */,
+				B62495C72000C2F4003287D0 /* AKUserAPI.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -742,6 +768,7 @@
 				4695F0031FC27C09000129A3 /* AKEnumDefine.h */,
 				4695F0571FC2A43B000129A3 /* AKUIDefine.h */,
 				4695F07D1FC2B0AF000129A3 /* AKDefine.h */,
+				B62495BC2000BC28003287D0 /* AKErrorCode.h */,
 			);
 			name = Header;
 			sourceTree = "<group>";
@@ -1138,6 +1165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62495C52000C10F003287D0 /* AKRSA.m in Sources */,
 				4695F07C1FC2AAF1000129A3 /* AKViewModel.m in Sources */,
 				4603B7851FC549F600295588 /* AKSettingViewModel.m in Sources */,
 				4603B7951FC69BEE00295588 /* AKMineViewController.m in Sources */,
@@ -1158,6 +1186,7 @@
 				46E72C451FE0FEE100BCE1EF /* AKFinishingQuzController.m in Sources */,
 				463606B51FD1390100516E83 /* AKMyAnswerController.m in Sources */,
 				462D0C921FD1300F00B606BD /* AKUILayoutTools.m in Sources */,
+				B62495BB2000BA8C003287D0 /* AKRequest.m in Sources */,
 				463606BC1FD153CE00516E83 /* AKMyPurseCell.m in Sources */,
 				4695F06C1FC2A93B000129A3 /* UIViewController+KeyBoard.m in Sources */,
 				4603B7881FC55B1600295588 /* UITableView+AKHeightCache.m in Sources */,
@@ -1165,6 +1194,7 @@
 				4695F06D1FC2A93B000129A3 /* UIViewController+NavigationItem.m in Sources */,
 				4603B7661FC51E4D00295588 /* AKUITableViewCellData.m in Sources */,
 				4695F0021FC27B0D000129A3 /* AKTabBarController.m in Sources */,
+				B62495C22000BE91003287D0 /* AKJsonHelper.m in Sources */,
 				4603B7731FC5265000295588 /* AKUISystemCellData.m in Sources */,
 				462D0C7C1FCFAE5300B606BD /* AKMessageCenterController.m in Sources */,
 				463606AF1FD138C200516E83 /* AKMyAnswerViewModel.m in Sources */,
@@ -1189,11 +1219,13 @@
 				46E72C481FE0FF0200BCE1EF /* AKLatestQuzViewModel.m in Sources */,
 				4603B74D1FC5116500295588 /* AKLoadNoDataView.m in Sources */,
 				462D0C721FCEAB0C00B606BD /* AKMentorViewModel.m in Sources */,
+				B62495C82000C2F4003287D0 /* AKUserAPI.m in Sources */,
 				4603B76C1FC520FD00295588 /* AKNetworkService.m in Sources */,
 				4695EFFD1FC275E6000129A3 /* AppDelegate.m in Sources */,
 				4695F0171FC2892D000129A3 /* UIViewController+Custom.m in Sources */,
 				462D0C751FCEB6DE00B606BD /* AKIAMMentorCell.m in Sources */,
 				4695F0111FC284BB000129A3 /* AKNavigationController.m in Sources */,
+				B62495BF2000BCF6003287D0 /* AKViewAssistTools.m in Sources */,
 				4695EFF91FC275D7000129A3 /* main.m in Sources */,
 				461B50E61FD6338C005C939B /* AKGoodAtFieldController.m in Sources */,
 				4603B7691FC51ECF00295588 /* AKUITableViewCell.m in Sources */,

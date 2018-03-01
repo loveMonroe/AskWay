@@ -12,6 +12,8 @@
 #import "AKPublishController.h"
 #import "AKNavigationController.h"
 
+#import "AKUserAPI.h"
+
 @interface AKHomePageController ()
 
 @end
@@ -24,6 +26,13 @@
     
     [self lp_setupNavLeftItemWithTitle:@"消息" action:@selector(_gotoMessageCenter:)];
     [self lp_setupNavRightItemWithTitle:@"发布" action:@selector(_gotoPublishPage:)];
+    
+    AKUserAPI *api = [[AKUserAPI alloc] initWithAccount:@"adsf" andPassword:@"123456"];
+    [api startWithDataCompletionBlockWithSuccess:^(__kindof AKRequest * _Nonnull request) {
+        
+    } failure:^(__kindof AKRequest * _Nonnull request) {
+        
+    }];
 }
 
 #pragma mark - UI and Action
